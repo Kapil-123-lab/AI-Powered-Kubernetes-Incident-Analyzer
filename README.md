@@ -1,3 +1,4 @@
+<img width="1915" height="963" alt="Screenshot 2026-07-03 120148" src="https://github.com/user-attachments/assets/8352d1de-6795-4085-aa6d-f152d5eeb1d4" />
 # 🚀 AI-Powered Kubernetes Incident Analyzer
 
 ![CI](https://github.com/Kapil-123-lab/AI-Powered-Kubernetes-Incident-Analyzer/actions/workflows/ci.yml/badge.svg)
