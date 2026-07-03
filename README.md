@@ -8,7 +8,32 @@ a root-cause analysis, severity rating, and a concrete suggested fix —
 grounded in real Prometheus metrics, not just log text. Runs as a fully
 Dockerized multi-service stack.
 
-*(Screenshot/GIF of the dashboard here — Incidents page + MTTR/MTBF page work well.)*
+## 📸 Screenshots
+
+**Overview**
+![Overview](screenshots/overview.png)
+
+**Pod Analyzer** — AI root-cause analysis with a suggested fix command
+![Pod Analyzer](screenshots/pod-analyzer.png)
+
+**Incidents** — history with per-incident metrics snapshot and resolve action
+![Incidents](screenshots/incidents.png)
+
+**Analytics**
+![Analytics](screenshots/analytics.png)
+
+**MTTR / MTBF Dashboard**
+![MTTR MTBF](screenshots/mttr-mtbf.png)
+
+**Reports**
+![Reports](screenshots/reports.png)
+
+**Settings**
+![Settings](screenshots/settings.png)
+
+**Grafana** — real in-cluster metrics via the existing Prometheus/Grafana stack
+![Grafana 1](screenshots/grafana-1.png)
+![Grafana 2](screenshots/grafana-2.png)
 
 ## ✨ Features
 
