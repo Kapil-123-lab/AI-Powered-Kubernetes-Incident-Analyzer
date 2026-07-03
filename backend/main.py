@@ -5,7 +5,6 @@ import atexit
 from datetime import datetime
 
 from dotenv import load_dotenv
-load_dotenv()  # reads .env in the current working directory into os.environ
 
 from fastapi import FastAPI, Depends, HTTPException, Security, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -27,6 +26,9 @@ from prometheus_api_client import PrometheusConnect
 import ollama
 from kubernetes import client, config
 import requests
+import urllib3
+
+load_dotenv()  # reads .env in the current working directory into os.environ
 
 # ── Ollama host ──────────────────────────────────────────────
 # The ollama Python library defaults to http://localhost:11434.
@@ -132,7 +134,6 @@ client.Configuration.set_default(k8s_configuration)
 
 # Suppress the resulting "Unverified HTTPS request" warnings — expected
 # and harmless given verify_ssl is disabled intentionally above.
-import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 v1 = client.CoreV1Api()
